@@ -9,8 +9,48 @@ body {
 * {
   box-sizing: border-box;
 }
+/* sticky footer styling ---------------------------------------*/
 
-/* general */
+/* http://ryanfait.com/html5-sticky-footer/ */
+
+html,
+body {
+  height: 100%;
+}
+
+.wrapper {
+  height: auto !important;
+  height: 100%;
+  min-height: 100%;
+  margin: 0 auto -105px;
+}
+
+footer,
+.push {
+  height: 105px;
+}
+
+/* end sticky footer styling */
+
+/* start hover styling */
+
+#logo:hover,
+input[type=submit]:hover {
+  background: #1e6ebf;
+}
+
+nav a:hover {
+  color: #5e7f7e;
+}
+
+.social:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+/* end hover styling ----------------------------------------*/
+
+/* general styling */
 
 .container {
   width: 100%;
@@ -35,7 +75,7 @@ h2,
 h3 {
   font-family: Georgia, Times, "Times New Roman", serif;
   font-weight: 700;
-  color: #4aaaa5;
+  color: #999;
 }
 
 h1 {
@@ -74,7 +114,7 @@ h3 {
   color: #fff;
   text-align: center;
   text-decoration: none;
-  background: #4aaaa5;
+  background: #3399FF;
 }
 
 nav {
@@ -106,7 +146,7 @@ footer {
   color: #ccc;
   text-align: center;
   background: #666;
-  border-top: 8px solid #4aaaa5;
+  border-top: 8px solid #3399FF;
 }
 
 /* sidebar */
@@ -186,7 +226,7 @@ h3,
   line-height: 30px;
   color: #fff;
   text-align: center;
-  background: #4aaaa5;
+  background: #3399FF;
   border-bottom: 0;
 }
 
@@ -200,7 +240,7 @@ h3,
 
 /* contact page */
 
-#contact-form ul {
+/*#contact-form ul {
   margin-bottom: 20px;
 }
 
@@ -237,7 +277,7 @@ input[type=submit] {
   background: #4aaaa5;
   border: 0 none;
 }
-
+*/
 /*different sizes*/
 /* width at 980px*/
 @media screen and (max-width: 980px) {
@@ -251,15 +291,6 @@ input[type=submit] {
     padding: 20px;
   }
 
-  /*#main-content,
-  #sidebar {
-    width: 100%;
-  }
-
-  #sidebar {
-    margin-top: 40px;
-  }
-}*/
 
 /* Additional Screen Sizes */
 
@@ -275,15 +306,6 @@ input[type=submit] {
     padding: 20px;
   }
 
-  /*#main-content,
-  #sidebar {
-    width: 100%;
-  }
-
-  #sidebar {
-    margin-top: 40px;
-  }
-}*/
 
 /* Width at 640px and below */
 @media screen and (max-width: 640px) {
@@ -297,12 +319,4 @@ input[type=submit] {
     padding: 20px;
   }
 
-  /*#main-content,
-  #sidebar {
-    width: 100%;
-  }
-
-  #sidebar {
-    margin-top: 40px;
-  }*/
 }
