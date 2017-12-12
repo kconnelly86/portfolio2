@@ -35,7 +35,10 @@ footer,
 /* end sticky footer styling */
 
 /* start hover styling */
-
+h3:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
 #logo:hover,
 input[type=submit]:hover {
   background: #5e7f7e;
@@ -88,7 +91,7 @@ h1 {
 }
 
 h2,
-h3 {
+h3{
   font-size: 22px;
 }
 

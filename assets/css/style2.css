@@ -47,6 +47,11 @@ nav a:hover {
   cursor: pointer;
   opacity: 0.8;
 }
+.work h3:hover,
+input[type=submit]:hover {
+  background: #1e6ebf;
+}
+
 
 /* end hover styling ----------------------------------------*/
 
@@ -86,9 +91,13 @@ h1 {
 }
 
 h2,
-h3 {
+h3{
   font-size: 22px;
 }
+/*h2,
+h3:hover{
+  font-size: 22px;
+}*/
 
 /* header */
 
